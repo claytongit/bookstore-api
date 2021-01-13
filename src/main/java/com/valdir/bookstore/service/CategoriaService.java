@@ -33,7 +33,7 @@ public class CategoriaService {
 		return repository.save(obj);
 	}
 
-	public Categoria create(Integer id, CategoriaDTO objDto) {
+	public Categoria update(Integer id, CategoriaDTO objDto) {
 		Categoria obj = findById(id);
 		obj.setNome(objDto.getNome());
 		obj.setDescricao(objDto.getDescricao());
